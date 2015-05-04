@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!-- table中带背景色的ROW -->  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item>  
+        <shape>  
+            <solid android:color="@android:color/transparent"/>   
+            <stroke android:width="2dp" android:color="#ff96c1f2" />  
+        </shape>   
+    </item>
+</layer-list>  

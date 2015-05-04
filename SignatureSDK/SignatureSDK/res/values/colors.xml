@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="signature_tv">#ff3f4a57</color>
+    <color name="white">#ffffff</color>
+    <color name="lib_black">#000000</color>
+    <color name="listview_header_bg">#90CCE3FC</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="lib_tab_item_text_color">#000000</color>
+    <color name="gray">#999999</color>
+
+ 
+
+
+
+    
+</resources>

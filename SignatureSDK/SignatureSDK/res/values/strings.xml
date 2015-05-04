@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SignatureSDK</string>
+
+    <!-- 电子签名 -->
+    <string name="lib_sig_name">电子签名：</string>
+    <string name="lib_sig_del">删除</string>
+    <string name="lib_sig">签名</string>
+    <string name="lib_add_attachment">添加附件</string>
+    <string name="lib_add">新增</string>
+    <string name="lib_meter">仪表规范</string>
+    <string name="lib_work_step">作业步骤</string>
+    <string name="lib_work_standard">作业标准</string>
+    <string name="lib_reset_signature">重写</string>
+
+</resources>

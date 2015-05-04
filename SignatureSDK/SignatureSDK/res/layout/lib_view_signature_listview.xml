@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_digital_signature"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    
+
+        <RelativeLayout
+            android:id="@+id/rel_sig_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lib_margin_small"
+            android:layout_marginTop="@dimen/lib_margin_small" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:text="@string/lib_sig_name"
+                android:textColor="@color/lib_black"
+                android:textSize="@dimen/lib_text_size_large" />
+
+            <TextView
+                android:id="@+id/btn_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/main_btn_margin"
+                android:layout_toLeftOf="@+id/btn_sig"
+                android:background="@drawable/lib_shape_gray_bg"
+                android:drawableLeft="@drawable/lib_delete_black"
+                android:padding="@dimen/lib_margin_normal"
+                android:text="@string/lib_sig_del"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/main_btn_text_size" />
+
+            <TextView
+                android:id="@+id/btn_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/lib_shape_gray_bg"
+                android:drawableLeft="@drawable/lib_sign_name"
+                android:padding="@dimen/lib_margin_normal"
+                android:text="@string/lib_sig"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/main_btn_text_size" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/digital_signature_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lib_margin_normal"
+            android:layout_marginLeft="@dimen/lib_margin_small"
+            android:layout_marginRight="@dimen/lib_margin_small"
+            android:background="@drawable/lib_shape_sign_bg"
+            android:padding="@dimen/cell_padding" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/lib_gallery_item_height" >
+
+                <GridView
+                    android:id="@+id/digital_signature_show_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:horizontalSpacing="@dimen/gallery_spacing" >
+                </GridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>

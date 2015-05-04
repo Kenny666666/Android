@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <com.general.comtop.signature.view.SignatureView
+        android:id="@+id/dialog_signature_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@drawable/lib_dialog_sig_view_bg" />
+
+    <RelativeLayout
+        android:id="@+id/relative_dialog_signature"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_dialog_signature_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lib_button_blue_style"
+            android:paddingBottom="@dimen/lib_margin_normal"
+            android:paddingLeft="@dimen/lib_margin_xxlarge"
+            android:paddingRight="@dimen/lib_margin_xxlarge"
+            android:paddingTop="@dimen/lib_margin_normal"
+            android:text="@string/lib_reset_signature"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lib_text_size_normal" />
+
+        <Button
+            android:id="@+id/btn_dialog_signature_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btn_dialog_signature_reset"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@id/btn_dialog_signature_reset"
+            android:background="@drawable/lib_button_blue_style"
+            android:paddingBottom="@dimen/lib_margin_normal"
+            android:paddingLeft="@dimen/lib_margin_xxlarge"
+            android:paddingRight="@dimen/lib_margin_xxlarge"
+            android:paddingTop="@dimen/lib_margin_normal"
+            android:text="@android:string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lib_text_size_normal" />
+
+        <Button
+            android:id="@+id/btn_dialog_signature_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btn_dialog_signature_reset"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/btn_dialog_signature_reset"
+            android:background="@drawable/lib_button_blue_style"
+            android:paddingBottom="@dimen/lib_margin_normal"
+            android:paddingLeft="@dimen/lib_margin_xxlarge"
+            android:paddingRight="@dimen/lib_margin_xxlarge"
+            android:paddingTop="@dimen/lib_margin_normal"
+            android:text="@android:string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lib_text_size_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

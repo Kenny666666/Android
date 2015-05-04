@@ -1,0 +1,49 @@
+<resources>
+
+ 
+
+    <!-- 电子签名 -->
+    <dimen name="btn_min_width">120dp</dimen>
+    <dimen name="main_btn_text_size">18sp</dimen>
+    <dimen name="cell_padding">10dip</dimen>
+    <dimen name="main_btn_margin">15dip</dimen>
+    <dimen name="gallery_spacing">20dip</dimen>
+    <dimen name="lib_cell_padding">10dip</dimen>
+    <dimen name="lib_tab_item_text_size">16sp</dimen>
+    <dimen name="lib_tab_margin_left_and_right">8dp</dimen>
+    <dimen name="lib_tab_min_height">50dp</dimen>
+
+
+
+    <!-- 字体大小 -->
+    <dimen name="lib_text_size_xsmall">16sp</dimen>
+    <dimen name="lib_text_size_small">18sp</dimen>
+    <dimen name="lib_text_size_normal">20sp</dimen>
+    <dimen name="lib_text_size_large">22sp</dimen>
+    <dimen name="lib_text_size_xlarge">24sp</dimen>
+    <dimen name="lib_text_size_title">28sp</dimen>
+    <dimen name="lib_work_form_time_text">20sp</dimen>
+
+    <!-- 常用的边距 -->
+    <dimen name="lib_margin_small">5dp</dimen>
+    <dimen name="lib_margin_normal">15dp</dimen>
+    <dimen name="lib_margin_large">20dp</dimen>
+    <dimen name="lib_margin_xlarge">30dp</dimen>
+    <dimen name="lib_margin_xxlarge">40dp</dimen>
+    <dimen name="lib_gallery_item_width">300dp</dimen>
+    <dimen name="lib_gallery_item_height">100dp</dimen>
+    <dimen name="lib_gallery_item_width2">200dp</dimen>
+    <dimen name="corner">5dip</dimen>
+    <dimen name="cell_maginleft">-1px</dimen>
+    <dimen name="basic_form_table_title_size">18sp</dimen>
+    <dimen name="magin_big">10dp</dimen>
+    <dimen name="magin_small">5dp</dimen>
+    <dimen name="lib_tab_padding">20dp</dimen>
+    <dimen name="lib_list_item_min_height">50dp</dimen>
+    <dimen name="lib_blue_line_height_normal">2px</dimen>
+    <dimen name="lib_blue_line_height_small">1px</dimen>
+    <dimen name="lib_4px_height">4px</dimen>
+    <dimen name="lib_bottom_bold_line_height">6px</dimen>
+
+   
+</resources>
