@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <!-- android:focusable="false" 解决listview焦点被枪占的问题 -->
+    <CheckBox
+        android:id="@+id/id_cb"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Android新技能"
+        android:textColor="#F8F7FB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/id_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_title"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/id_cb"
+        android:maxLines="2"
+        android:minLines="1"
+        android:singleLine="true"
+        android:text="Android打造万能的listview和gridview适配器"
+        android:textColor="#F8F7FB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_desc"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:singleLine="true"
+        android:text="2014-12-12"
+        android:textColor="#F8F7FB"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/id_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/id_time"
+        android:layout_marginTop="10dp"
+        android:background="#2ED667"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:drawablePadding="5dp"
+        android:text="10086"
+        android:textColor="#F8F7FB"
+        android:textSize="12sp" />
+
+</RelativeLayout>

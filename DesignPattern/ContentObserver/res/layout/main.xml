@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" ion="vertical">
+
+	<TextView android:id="@+id/tvAirplane" android:layout_width="fill_parent"
+		android:textSize="18sp" android:layout_height="wrap_content"  android:layout_marginTop="20dip"
+		android:text="显示飞行模式状态" android:layout_marginBottom="20dip" />
+
+
+	<EditText android:id="@+id/smsoutboxContent"
+		android:layout_width="fill_parent" android:layout_height="300dip"
+		android:gravity="left|top"></EditText>
+</LinearLayout>
