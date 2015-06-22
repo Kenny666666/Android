@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"/>
+
+    <Button
+        android:id="@+id/btn_load_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载图片到缓存文件"
+        />
+
+    <Button
+        android:id="@+id/btn_read_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取缓存图片并显示"
+        />
+    <Button
+        android:id="@+id/btn_remove_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移除缓存图片"
+        />
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
