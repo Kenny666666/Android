@@ -1,0 +1,72 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_str_request_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字符串请求get"/>
+
+        <Button
+            android:id="@+id/btn_str_request_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字符串请求post"/>
+
+        <Button
+            android:id="@+id/btn_json_request_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="json请求"/>
+
+        <Button
+            android:id="@+id/btn_xml_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xml请求"/>
+        <Button
+            android:id="@+id/btn_gson_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gson请求"/>
+        <Button
+            android:id="@+id/btn_image_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="image_Request加载图片"/>
+
+        <Button
+            android:id="@+id/btn_image_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="image_Loader加载图片"/>
+
+        <Button
+            android:id="@+id/btn_image_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="network_imageview加载图片"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/network_image_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+</ScrollView>
