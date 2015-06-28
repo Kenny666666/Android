@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kenny.demo" >
+
+    <!--有些程序可能会有自己的Application，并在这里配置过了，没有关系，这时只需要修改一下MyApplication的继承结构，让它不要直接继承Application类，而是继承LitePalApplication类，就可以使用一切都能正常工作了-->
+    <!--但是，有些程序可能会遇到一些更加极端的情况，比如说MyApplication需要继承另外一个AnotherApplication，并且这个AnotherApplication还是在jar包当中的，不能修改它的代码。这种情况应该算是比较少见了，但是如果你遇到了的话也不用急，仍然是有解释方案的。你可以把LitePal的源码下载下来，然后把src目录下的所有代码直接拷贝到你项目的src目录下面，接着打开LitePalApplication类，将它的继承结构改成继承自AnotherApplication，再让MyApplication继承自LitePalApplication，这样所有的Application就都可以在一起正常工作了。-->
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeleteAndUpdateActivity"></activity>
+        <activity android:name=".SelectActivity"></activity>
+        <activity android:name=".JuHeActivity"></activity>
+    </application>
+
+</manifest>

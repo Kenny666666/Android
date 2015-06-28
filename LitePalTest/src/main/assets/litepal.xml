@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--   数据库升级方法
+    我们不需要去编写任何与升级相关的逻辑，也不需要关心程序是从哪个版本升级过来的，唯一要做的就是确定好最新的Model结构是什么样的，然后将litepal.xml中的版本号加1，所有的升级逻辑就都会自动完成了
+    然而，LitePal却明显做到了更好。前面我们提到过关于删除列的问题，最终的结论是无法解决，因为SQLite是不支持删除列的命令的。但是如果使用LitePal，这一问题就可以简单地解决掉，比如说publishdate这一列我们又不想要了，那么只需要在Comment类中把它删除掉，然后将版本号加1，下次操作数据库的时候这个列就会不见了。
+    那么有的朋友可能会问了，不是说SQLite不支持删除列的命令吗？那LitePal又是怎样做到的呢？其实LitePal并没有删除任何一列，它只是先将comment表重命名成一个临时表，然后根据最新的Comment类的结构生成一个新的comment表，再把临时表中除了publishdate之外的数据复制到新的表中，最后把临时表删掉。因此，看上去的效果好像是做到了删除列的功能。
+
+    -->
+    <!--数据库名称-->
+    <dbname value="demo" ></dbname>
+    <!--数据库版本-->
+    <version value="4" ></version>
+
+    <!--所有映射类在这里配置-->
+    <list>
+        <mapping class="com.kenny.demo.entity.News"></mapping>
+        <mapping class="com.kenny.demo.entity.Comment"></mapping>
+        <mapping class="com.kenny.demo.entity.Introduction"></mapping>
+        <mapping class="com.kenny.demo.entity.Category"></mapping>
+
+    </list>
+</litepal>
