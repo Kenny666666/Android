@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kenny.aidl" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--依赖aidl文件形式实现进程间通信，intent-filter的作用是便于隐式调用service-->
+        <service android:name="com.kenny.aidl.CalcService" >
+            <intent-filter>
+                <action android:name="com.kenny.aidl" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!--不依赖aidl文件实现进程间通信-->
+        <!--<service android:name="com.kenny.aidl.CalcPlusService" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.kenny.aidl.calcplus" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+    </application>
+
+</manifest>
