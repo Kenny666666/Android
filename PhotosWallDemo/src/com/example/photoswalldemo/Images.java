@@ -1,5 +1,5 @@
 package com.example.photoswalldemo;
-
+/***/
 public class Images {
 
 	public final static String[] imageThumbUrls = new String[] {
