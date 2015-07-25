@@ -10,6 +10,7 @@ import android.widget.ListView;
 import com.demo.adapter.MyAdapter;
 import com.demo.bean.Bean;
 /**
+
  * 说明：通用Adapter使用方法->创建adapter时直接继承CommonAdapter就行了，Adapter中的ViewHolder类不用写
  * 在自己的adapter构造中加入布局文件的ID  如：	public MyAdapter(Context context,List<Bean> datas){
 												super(context, datas,R.layout.item_listview);
