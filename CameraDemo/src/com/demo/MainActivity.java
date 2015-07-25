@@ -20,7 +20,7 @@ import com.demo.bean.FileBean;
 import com.demo.myview.HorizontalListView;
 import com.demo.util.PictureUtil;
 
-
+/**拍照后缩放图片显示*/
 public class MainActivity extends Activity implements OnItemClickListener {
 	private Context mContext;
 	private static final int REQUEST_TAKE_PHOTO = 0;
