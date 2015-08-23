@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolBarTheme" parent="AppTheme.Base">
+        <item name="android:navigationBarColor">@color/app_primary_color_dark</item>
+    </style>
+</resources>
