@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+    <com.kenny.topbar.Topbar1
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:leftBackground="#1A87EA"
+        app:leftText="返回"
+        app:leftTextColor="#1E1E1E"
+        app:rightBackground="#1A87EA"
+        app:rightText="右按钮"
+        app:rightTextColor="#1E1E1E"
+        app:titleText="中间文字"
+        app:titleTextColor="#123415"
+        app:titleTextSize="15sp"
+        >
+
+    </com.kenny.topbar.Topbar1>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="titleText" format="string"></attr>
+    <attr name="titleTextSize" format="dimension"></attr>
+    <attr name="titleTextColor" format="color"></attr>
+
+    <attr name="leftTextColor" format="color"></attr>
+    <attr name="leftBackground" format="reference|color"></attr>
+    <attr name="leftText" format="string"></attr>
+
+    <attr name="rightTextColor" format="color"></attr>
+    <attr name="rightBackground" format="reference|color"></attr>
+    <attr name="rightText" format="string"></attr>
+
+    <declare-styleable name="topbar">
+        <attr name="titleText"/>
+        <attr name="titleTextSize"/>
+        <attr name="titleTextColor"/>
+
+        <attr name="leftTextColor"/>
+        <attr name="leftBackground"/>
+        <attr name="leftText"/>
+
+        <attr name="rightTextColor"/>
+        <attr name="rightBackground"/>
+        <attr name="rightText"/>
+    </declare-styleable>
+</resources>
