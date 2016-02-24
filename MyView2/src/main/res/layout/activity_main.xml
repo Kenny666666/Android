@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我特意让显示出现3中情况：
+1、字体的宽度大于图片，且View宽度设置为wrap_content
+2、View宽度设置为精确值，字体的长度大于此宽度
+3、图片的宽度大于字体，且View宽度设置为wrap_content
+"
+        />
+
+    <com.kenny.myview.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:image="@drawable/ic_launcher"
+        app:imageScaleType="center"
+        app:titleText="hello andorid ! "
+        app:titleTextColor="#ff0000"
+        app:titleTextSize="30sp"/>
+
+    <com.kenny.myview.MyView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:image="@drawable/ic_launcher"
+        app:imageScaleType="center"
+        app:titleText="helloworldwelcome"
+        app:titleTextColor="#00ff00"
+        app:titleTextSize="20sp"/>
+
+    <com.kenny.myview.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:image="@drawable/java"
+        app:imageScaleType="center"
+        app:titleText="妹子~"
+        app:titleTextColor="#ff0000"
+        app:titleTextSize="12sp"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--第一圈的颜色-->
+    <attr name="firstColor" format="color" />
+    <!--第二圈的颜色-->
+    <attr name="secondColor" format="color" />
+    <!--圆环宽度-->
+    <attr name="circleWidth" format="dimension" />
+    <!--速度-->
+    <attr name="speed" format="integer" />
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="speed" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--第一圈的颜色-->
+    <attr name="firstColor" format="color" />
+    <!--第二圈的颜色-->
+    <attr name="secondColor" format="color" />
+    <!--圈的宽度-->
+    <attr name="circleWidth" format="dimension" />
+    <!--块的个数-->
+    <attr name="dotCount" format="integer" />
+    <!--每个块之间的间隙-->
+    <attr name="splitSize" format="integer" />
+    <!--中间的背景-->
+    <attr name="bg" format="reference"></attr>
+
+    <declare-styleable name="CustomVolumControlBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="dotCount" />
+        <attr name="splitSize" />
+        <attr name="bg" />
+    </declare-styleable>
+
+</resources>

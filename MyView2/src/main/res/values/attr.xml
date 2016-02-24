@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义view中的文字-->
+    <attr name="titleText" format="string" />
+    <!--自定义view中的文字的大小-->
+    <attr name="titleTextSize" format="dimension" />
+    <!--自定义view中的文字的颜色-->
+    <attr name="titleTextColor" format="color" />
+    <!--自定义view中的图片-->
+    <attr name="image" format="reference" />
+    <!--自定义view中的图片的摆放-->
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0" />
+        <enum name="center" value="1" />
+    </attr>
+
+    <declare-styleable name="MyView">
+        <attr name="titleText" />
+        <attr name="titleTextSize" />
+        <attr name="titleTextColor" />
+        <attr name="image" />
+        <attr name="imageScaleType" />
+    </declare-styleable>
+
+</resources>
