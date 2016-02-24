@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openAsyncTaskAndSaveInstanceState"
+        android:text="AsyncTaskAndSaveInstanceState" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openFragmentRetainDataActivity"
+        android:text="这种在旋转时还是会报错AsyncTaskAndFragment" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openConfigChangesTestActivity"
+        android:text="这种activity还是会重新加载ConfigChangesTestActivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openFixProblemsActivity"
+        android:text="完美解决有异步请求或dialog的情况下旋转FixProblemsActivity" />
+
+</LinearLayout>
