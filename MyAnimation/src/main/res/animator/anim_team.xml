@@ -1,0 +1,41 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:ordering="sequentially" >
+<!--
+我们也可以使用XML来完成复杂的组合动画操作，比如将一个视图先从屏幕外移动进屏幕，然后开始旋转360度，旋转的同时进行淡入淡出操作，就可以这样写：
+-->
+    <objectAnimator
+        android:duration="2000"
+        android:propertyName="translationX"
+        android:valueFrom="-500"
+        android:valueTo="0"
+        android:valueType="floatType" >
+    </objectAnimator>
+
+    <set android:ordering="together" >
+        <objectAnimator
+            android:duration="3000"
+            android:propertyName="rotation"
+            android:valueFrom="0"
+            android:valueTo="360"
+            android:valueType="floatType" >
+        </objectAnimator>
+
+        <set android:ordering="sequentially" >
+            <objectAnimator
+                android:duration="1500"
+                android:propertyName="alpha"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:valueType="floatType" >
+            </objectAnimator>
+            <objectAnimator
+                android:duration="1500"
+                android:propertyName="alpha"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" >
+            </objectAnimator>
+        </set>
+    </set>
+
+</set>
